@@ -1,53 +1,88 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="3" passed="3">
+<testng-results skipped="1" failed="0" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="33063" started-at="2016-04-30T16:04:07Z" finished-at="2016-04-30T16:04:40Z">
+  <suite name="Default suite" duration-ms="101" started-at="2016-05-02T14:15:09Z" finished-at="2016-05-02T14:15:09Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="33063" started-at="2016-04-30T16:04:07Z" finished-at="2016-04-30T16:04:40Z">
-      <class name="com.sqa.jf.util.helpers.BasicAutomationTest">
-        <test-method status="PASS" signature="loadProperties()[pri:0, instance:com.sqa.jf.util.helpers.BasicAutomationTest@2a2d45ba]" name="loadProperties" is-config="true" duration-ms="56" started-at="2016-04-30T09:04:07Z" finished-at="2016-04-30T09:04:07Z">
+    <test name="Default test" duration-ms="101" started-at="2016-05-02T14:15:09Z" finished-at="2016-05-02T14:15:09Z">
+      <class name="com.sqa.jf.util.helpers.BasicAutoTest">
+        <test-method status="FAIL" signature="setupFirefox(java.lang.String)[pri:0, instance:com.sqa.jf.util.helpers.BasicAutoTest@1753acfe]" name="setupFirefox" is-config="true" duration-ms="0" started-at="2016-05-02T07:15:09Z" finished-at="2016-05-02T07:15:09Z">
+          <exception class="org.testng.TestNGException">
+            <message>
+              <![CDATA[
+Method setupFirefox requires 1 parameters but 0 were supplied in the @Configuration annotation.]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestNGException: 
+Method setupFirefox requires 1 parameters but 0 were supplied in the @Configuration annotation.
+	at org.testng.internal.Parameters.checkParameterTypes(Parameters.java:191)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:127)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:376)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:84)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:202)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:143)
+	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:178)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:778)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1225)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1150)
+	at org.testng.TestNG.runSuites(TestNG.java:1075)
+	at org.testng.TestNG.run(TestNG.java:1047)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:137)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:58)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.TestNGException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- loadProperties -->
-        <test-method status="PASS" signature="setUpTest()[pri:1, instance:com.sqa.jf.util.helpers.BasicAutomationTest@2a2d45ba]" name="setUpTest" duration-ms="32816" started-at="2016-04-30T09:04:07Z" finished-at="2016-04-30T09:04:40Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUpTest -->
-        <test-method status="PASS" signature="test(java.lang.Integer, java.lang.String)[pri:50, instance:com.sqa.jf.util.helpers.BasicAutomationTest@2a2d45ba]" name="test" duration-ms="5" started-at="2016-04-30T09:04:40Z" data-provider="dp" finished-at="2016-04-30T09:04:40Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[1]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[a]]>
-              </value>
-            </param>
-          </params>
+        </test-method> <!-- setupFirefox -->
+        <test-method status="SKIP" signature="test(java.lang.String, java.lang.String)[pri:0, instance:com.sqa.jf.util.helpers.BasicAutoTest@1753acfe]" name="test" duration-ms="0" started-at="2016-05-02T07:15:09Z" data-provider="UserAccountInfo" finished-at="2016-05-02T07:15:09Z">
+          <exception class="org.testng.TestNGException">
+            <message>
+              <![CDATA[
+Method public void com.sqa.jf.util.helpers.BasicAutoTest.test(java.lang.String,java.lang.String) requires a @DataProvider named : UserAccountInfo]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestNGException: 
+Method public void com.sqa.jf.util.helpers.BasicAutoTest.test(java.lang.String,java.lang.String) requires a @DataProvider named : UserAccountInfo
+	at org.testng.internal.Parameters.findDataProvider(Parameters.java:263)
+	at org.testng.internal.Parameters.handleParameters(Parameters.java:419)
+	at org.testng.internal.Invoker.handleParameters(Invoker.java:1243)
+	at org.testng.internal.Invoker.createParameters(Invoker.java:992)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1082)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:778)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1225)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1150)
+	at org.testng.TestNG.runSuites(TestNG.java:1075)
+	at org.testng.TestNG.run(TestNG.java:1047)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:137)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:58)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.TestNGException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test -->
-        <test-method status="PASS" signature="test(java.lang.Integer, java.lang.String)[pri:50, instance:com.sqa.jf.util.helpers.BasicAutomationTest@2a2d45ba]" name="test" duration-ms="16" started-at="2016-04-30T09:04:40Z" data-provider="dp" finished-at="2016-04-30T09:04:40Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[2]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[b]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test -->
-      </class> <!-- com.sqa.jf.util.helpers.BasicAutomationTest -->
+      </class> <!-- com.sqa.jf.util.helpers.BasicAutoTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
