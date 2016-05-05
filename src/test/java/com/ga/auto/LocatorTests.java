@@ -1,14 +1,10 @@
 package com.ga.auto;
 
-import java.util.List;
-
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
-import org.xml.sax.Locator;
 
 public class LocatorTests {
 	static WebDriver driver;
@@ -25,17 +21,17 @@ public class LocatorTests {
 		Assert.assertEquals(driver.getTitle(), pageTitle, "Page load does not seem successful.");
 	}
 
-	@Test(priority = 2)
-	public void test2() {
-		List<WebElement> links = Locator.getLinks(this.driver);
-		int i = 1;
-		for (WebElement link : links) {
-			String text = link.getText();
-			if (text.isEmpty()) {
-				text = "Non-text Element (" + i + ")";
-				i++;
-			}
-			System.out.println(link.getText() + " - " + link.getAttribute("href"));
-		}
-	}
+	// @Test(priority = 2)
+	// public void test2() {
+	// List<WebElement> links = Locator.getLinks(this.driver);
+	// int i = 1;
+	// for (WebElement link : links) {
+	// String text = link.getText();
+	// if (text.isEmpty()) {
+	// text = "Non-text Element (" + i + ")";
+	// i++;
+	// }
+	// System.out.println(link.getText() + " - " + link.getAttribute("href"));
+	// }
+	// }
 }

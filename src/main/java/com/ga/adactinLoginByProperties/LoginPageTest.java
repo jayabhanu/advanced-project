@@ -1,8 +1,20 @@
-package com.sqa.jf.util.helpers;
+package com.ga.adactinLoginByProperties;
 
+import java.util.Properties;
+
+import org.openqa.selenium.WebDriver;
+import org.testng.Assert;
+import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
+import com.sqa.jf.util.helpers.ConProperties;
+
 public class LoginPageTest {
+
+	public static String baseURL;
+	public static Properties devproperties;
+	public static String devpropertieslocation = "src/main/resources/dev.properties";
+	public static WebDriver driver;
 
 	// private static Properties devProps;
 	//
@@ -28,8 +40,23 @@ public class LoginPageTest {
 	// return data;
 	// }
 
+	@BeforeClass
+	public static String loadPropertiestest() {
+		devproperties = ConProperties.loadProperties(devpropertieslocation);
+		baseURL = devproperties.getProperty("baseURL");
+		System.out.println(baseURL);
+		return baseURL;
+	}
+
 	@Test
-	public void testlogin() {
+	public void logintest() {
+		String curTitle = driver.getTitle();
+		LoginPage login = new LoginPage();
+		login.login(baseURL);
+		// WebElement loginButton =
+		// driver.FindElement(By.cssSelector("#login"));
+		String newTitle = driver.getTitle();
+		Assert.assertFalse(curTitle.equals(newTitle), "Hurry you hv opened your Hotel management website ");
 
 	}
 }

@@ -1,88 +1,185 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="1" failed="0" total="1" passed="0">
+<testng-results skipped="0" failed="0" total="3" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="101" started-at="2016-05-02T14:15:09Z" finished-at="2016-05-02T14:15:09Z">
+  <suite name="Default suite" duration-ms="50620" started-at="2016-05-05T05:58:14Z" finished-at="2016-05-05T05:59:05Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="101" started-at="2016-05-02T14:15:09Z" finished-at="2016-05-02T14:15:09Z">
-      <class name="com.sqa.jf.util.helpers.BasicAutoTest">
-        <test-method status="FAIL" signature="setupFirefox(java.lang.String)[pri:0, instance:com.sqa.jf.util.helpers.BasicAutoTest@1753acfe]" name="setupFirefox" is-config="true" duration-ms="0" started-at="2016-05-02T07:15:09Z" finished-at="2016-05-02T07:15:09Z">
-          <exception class="org.testng.TestNGException">
-            <message>
-              <![CDATA[
-Method setupFirefox requires 1 parameters but 0 were supplied in the @Configuration annotation.]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.testng.TestNGException: 
-Method setupFirefox requires 1 parameters but 0 were supplied in the @Configuration annotation.
-	at org.testng.internal.Parameters.checkParameterTypes(Parameters.java:191)
-	at org.testng.internal.Parameters.createParameters(Parameters.java:127)
-	at org.testng.internal.Parameters.createParameters(Parameters.java:376)
-	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:84)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:202)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:143)
-	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:178)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
-	at org.testng.TestRunner.privateRun(TestRunner.java:778)
-	at org.testng.TestRunner.run(TestRunner.java:632)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1225)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1150)
-	at org.testng.TestNG.runSuites(TestNG.java:1075)
-	at org.testng.TestNG.run(TestNG.java:1047)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:137)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:58)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.testng.TestNGException -->
+    <test name="Default test" duration-ms="50620" started-at="2016-05-05T05:58:14Z" finished-at="2016-05-05T05:59:05Z">
+      <class name="com.ga.adactin.TC102">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.ga.adactin.TC102@20e2cbe0]" name="setUp" is-config="true" duration-ms="30392" started-at="2016-05-04T22:58:14Z" finished-at="2016-05-04T22:58:45Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setupFirefox -->
-        <test-method status="SKIP" signature="test(java.lang.String, java.lang.String)[pri:0, instance:com.sqa.jf.util.helpers.BasicAutoTest@1753acfe]" name="test" duration-ms="0" started-at="2016-05-02T07:15:09Z" data-provider="UserAccountInfo" finished-at="2016-05-02T07:15:09Z">
-          <exception class="org.testng.TestNGException">
-            <message>
-              <![CDATA[
-Method public void com.sqa.jf.util.helpers.BasicAutoTest.test(java.lang.String,java.lang.String) requires a @DataProvider named : UserAccountInfo]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.testng.TestNGException: 
-Method public void com.sqa.jf.util.helpers.BasicAutoTest.test(java.lang.String,java.lang.String) requires a @DataProvider named : UserAccountInfo
-	at org.testng.internal.Parameters.findDataProvider(Parameters.java:263)
-	at org.testng.internal.Parameters.handleParameters(Parameters.java:419)
-	at org.testng.internal.Invoker.handleParameters(Invoker.java:1243)
-	at org.testng.internal.Invoker.createParameters(Invoker.java:992)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1082)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
-	at org.testng.TestRunner.privateRun(TestRunner.java:778)
-	at org.testng.TestRunner.run(TestRunner.java:632)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1225)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1150)
-	at org.testng.TestNG.runSuites(TestNG.java:1075)
-	at org.testng.TestNG.run(TestNG.java:1047)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:137)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:58)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.testng.TestNGException -->
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="testCheckInOut(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, boolean)[pri:0, instance:com.ga.adactin.TC102@20e2cbe0]" name="testCheckInOut" duration-ms="7851" started-at="2016-05-04T22:58:45Z" data-provider="tc102data" finished-at="2016-05-04T22:58:53Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[jayabhanu]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[gajula]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Sydney]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Hotel Creek]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Standard]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[02/06/2016]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[4]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[2]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- test -->
-      </class> <!-- com.sqa.jf.util.helpers.BasicAutoTest -->
+        </test-method> <!-- testCheckInOut -->
+        <test-method status="PASS" signature="testCheckInOut(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, boolean)[pri:0, instance:com.ga.adactin.TC102@20e2cbe0]" name="testCheckInOut" duration-ms="5757" started-at="2016-05-04T22:58:53Z" data-provider="tc102data" finished-at="2016-05-04T22:58:58Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[SQABCMar21]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[sqaadmin2016]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Paris]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Hotel Creek]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Deluxe]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[2]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[01/06/2016]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[4]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[2]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCheckInOut -->
+        <test-method status="PASS" signature="testCheckInOut(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, boolean)[pri:0, instance:com.ga.adactin.TC102@20e2cbe0]" name="testCheckInOut" duration-ms="6555" started-at="2016-05-04T22:58:58Z" data-provider="tc102data" finished-at="2016-05-04T22:59:05Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[SQABCMar21]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[sqaadmin2016]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Paris]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Hotel Creek]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Deluxe]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[2]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[01/06/2014]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[4]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[2]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCheckInOut -->
+      </class> <!-- com.ga.adactin.TC102 -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
