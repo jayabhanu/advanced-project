@@ -1,3 +1,0 @@
-2016-05-04 18:10:02 WARN  LoginPage:73 - AutoBasics may have not been initialized, first initialize it before running the method which requires the drivers to be initilaziednull
-2016-05-04 18:39:11 WARN  LoginPage:75 - AutoBasics may have not been initialized, first initialize it before running the method which requires the drivers to be initilazied
-2016-05-04 18:40:17 WARN  LoginPage:75 - AutoBasics may have not been initialized, first initialize it before running the method which requires the drivers to be initilazied
