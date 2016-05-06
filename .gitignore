@@ -10,3 +10,4 @@ A Basic Structure for Maven Projects
 
 [Jean-francois Nepton](http://sqasolution.com)
 /target/
+logs/*
